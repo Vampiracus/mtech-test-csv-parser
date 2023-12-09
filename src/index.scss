@@ -1,0 +1,36 @@
+@use 'colors.scss';
+
+body {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    background-color: colors.$primary-background;
+    color: colors.$primary-text;
+
+    font-family: 'Arial Narrow', Arial, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-width: 300px;
+    margin: 0;
+
+    font-size: x-large;
+}
+
+h3, p, span {
+    color: colors.$secondary-text;
+    font-weight: 500;
+}
+
+a, button {
+    font: inherit;
+    color:inherit;
+}
+
+#root {
+    min-width: 98vw;
+    min-height: 98vh;
+}

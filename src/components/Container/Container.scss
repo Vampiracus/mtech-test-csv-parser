@@ -1,0 +1,22 @@
+@use '../../colors.scss';
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+
+    &__content {
+        min-width: 60vw;
+        min-height: 25vh;
+        padding: 16px;
+        background-color: colors.$secondary-background;
+        border-radius: 16px;
+        box-shadow: 2px 2px 10px black;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}

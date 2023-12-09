@@ -1,0 +1,19 @@
+@use './../../colors.scss';
+
+.file-label {
+    min-width: 200px;
+    padding: 10px;
+    border: 0;
+    border-radius: 8px;
+    text-align: center;
+
+    background-color: colors.$primary;
+
+    &:hover {
+        background-color: colors.$primary-hover;
+    }
+
+    &:active {
+        background-color: colors.$primary-active;
+    }
+}

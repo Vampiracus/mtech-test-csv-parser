@@ -1,0 +1,18 @@
+@use './../../colors.scss';
+
+.button {
+    min-width: 200px;
+    padding: 10px;
+    border: 0;
+    border-radius: 8px;
+
+    background-color: colors.$primary;
+
+    &:hover {
+        background-color: colors.$primary-hover;
+    }
+
+    &:active {
+        background-color: colors.$primary-active;
+    }
+}

@@ -1,0 +1,47 @@
+@use '../../colors.scss';
+
+.notification {
+    position: fixed;
+    top: 5px;
+    right: calc(max(5px, 20vw));
+    left: calc(max(5px, 20vw));
+    height: 4rem;
+    background-color: colors.$error-primary;
+    padding: 5px;
+    border-radius: 7px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    animation-name: appear;
+    animation-duration: 4.1s;
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: colors.$error-primary-hover;
+    }
+}
+
+@keyframes appear {
+    from {
+        top: -6rem;
+        opacity: 0;
+    }
+
+    20% {
+        top: 5px;
+        opacity: 1;
+    }
+
+    80% {
+        top: 5px;
+        opacity: 1;
+    }
+  
+    to {
+        top: -6rem;
+        opacity: 0;
+    }
+}

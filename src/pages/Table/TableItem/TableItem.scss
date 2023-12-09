@@ -1,0 +1,39 @@
+@use '../../../colors.scss';
+
+.table-item {
+    display: flex;
+    align-items: stretch;
+    border-top: 2px solid colors.$secondary-active;
+    background-color: colors.$secondary-background;
+    color: colors.$secondary-text;
+    padding: 0;
+
+    &__micro {
+        padding: 5px;
+        flex: 1;
+        text-align: start;
+        max-width: 350px;
+        overflow-wrap: break-word;
+    }
+
+    cursor: default;
+    &_first {
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;    
+
+        border-bottom: 3px solid colors.$secondary-active;
+        border-top: 0;
+
+        & .table-item__micro {
+            border-right: 2px solid colors.$secondary-active;
+        }
+    }
+    &_last {
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+
+    &:hover {
+        background-color: rgba(colors.$primary-hover, 20%);
+    }
+}
