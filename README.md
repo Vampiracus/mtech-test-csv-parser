@@ -2,6 +2,14 @@
 
 Создан инструмент просмотра csv-файла с данными
 
+Для запуска проекта:
+```
+git clone https://github.com/Vampiracus/mtech-test-csv-parser.git project
+cd project
+npm i
+npm run dev
+```
+
 Использованные технологии:
 - Vite (сборщик)
 - React
